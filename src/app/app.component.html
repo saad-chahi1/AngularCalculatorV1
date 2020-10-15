@@ -1,0 +1,54 @@
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<br><br>
+<div class="cal">
+<h1>{{ title }} !!</h1>
+<br>
+<table>
+  <tr>
+    <td colspan="2">
+      <label>Your First Number : </label>
+    </td>
+    <td>
+      <input type="number" name="num1" [(ngModel)]="num1">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">      
+      <label>Your Second Number : </label>
+    </td>
+    <td>
+      <input type="number" name="num2" [(ngModel)]="num2">
+    </td>
+  </tr>
+  <br>
+  <tr>
+    <td>
+      <button type="button" class="btn btn-primary" (click)="add()">+</button>
+    
+      <button type="button" class="btn btn-secondary" (click)="divise()">/</button>
+    
+      <button type="button" class="btn btn-success" (click)="mult()">*</button>
+    
+      <button type="button" class="btn btn-danger" (click)="soustr()">-</button>
+    </td>
+  </tr>
+  <br>
+  <tr>
+    <td>
+      <h2>Result : {{ num3 }}</h2>
+    </td>
+  </tr>
+</table>
+</div>
+
+<style type="text/css">
+  button{
+    margin-left: 42px;
+  }
+  .cal{
+    margin: auto;
+    width: 50%;
+  }
+</style>
